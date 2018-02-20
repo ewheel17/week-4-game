@@ -8,6 +8,10 @@ html,body {
     background-size: cover;  
 }
 
+div.inline {
+    float:left;
+}
+
 h1 {
     font-size:40px;
     font-weight:bold;
@@ -25,4 +29,14 @@ h2 {
     font-family: 'Berkshire Swash', cursive;
     /* font-family: 'Kaushan Script', cursive;
     font-family: 'Monoton', cursive;  */
+}
+
+h5 {
+    display:inline;
+}
+
+.hami {
+    height:200px;
+    margin-bottom:-150px !important;
+    padding-bottom:0 !important;
 }

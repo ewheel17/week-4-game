@@ -1,10 +1,14 @@
 html,body {
     height:100%;
+    margin:0;
+    padding:0;
+    
 }
 .dung_bg {
     background-image: url("../images/nikos-gaitanopoulos-menu-background.jpg");
+    height:auto;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: cover;  
 }
 
@@ -37,6 +41,5 @@ h5 {
 
 .hami {
     height:200px;
-    margin-bottom:-150px !important;
-    padding-bottom:0 !important;
+    margin-bottom:-70px;
 }

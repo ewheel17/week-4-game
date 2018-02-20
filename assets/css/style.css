@@ -3,7 +3,6 @@ html,body {
 }
 .dung_bg {
     background-image: url("../images/nikos-gaitanopoulos-menu-background.jpg");
-    height:100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;  

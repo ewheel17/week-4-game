@@ -1,22 +1,29 @@
-body, html {
+html,body {
     height:100%;
 }
-
 .dung_bg {
     background-image: url("../images/nikos-gaitanopoulos-menu-background.jpg");
     height:100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-size: cover;  
 }
 
 h1 {
-    font-size:80px;
+    font-size:40px;
     font-weight:bold;
+    padding: 0px;
     /* font-family:'Press Start 2P', cursive;  */
     /* font-family: 'Acme', sans-serif; */
     /* font-family: 'Berkshire Swash', cursive; */
     /* font-family: 'Kaushan Script', cursive; */
     font-family: 'Monoton', cursive; 
+}
+
+h2 {
+    /* font-family:'Press Start 2P', cursive;  
+    font-family: 'Acme', sans-serif; */
+    font-family: 'Berkshire Swash', cursive;
+    /* font-family: 'Kaushan Script', cursive;
+    font-family: 'Monoton', cursive;  */
 }

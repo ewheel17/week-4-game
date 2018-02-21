@@ -16,51 +16,51 @@
     <title>Dungeon Crawler</title>
 
 </head>
+
+  <!-- Ideas: 1.Add spooky dungeon music.
+              2.Add a reset game button in the title bar that appears after a champion is chosen.
+              3.Make everything cleaner and more appropriately responsive.
+              4.  -->
+
 <body class="dung_bg">
     <div class="text-center bg-dark text-success p-3 border-bottom border-success rounded-bottom">
         <h1>Dungeon Crawler</h1>
     </div>
 
-    <div class="row">
+    <div class="row" id="chooseChamp1">
         <div class="col-6 offset-3 bg-dark text-light text-center my-2 border border-success rounded py-1">
             <h2>Choose Your Champion!</h2>
         </div>
     </div>
 
-    <div class="row">
+    <div class="row" id="chooseChamp2">
         <div class="col-10 offset-1 bg-dark my-2 border border-success rounded pt-4 py-4">
             <div>
-                <div class="pl-5 pt-3 inline" style="font-family: 'Berkshire Swash', cursive;">
+                <div class="col-md-3 mb-3 inline cleric" onlick="setGame(1)">
                     <img src="assets/images/cleric.png" alt="Human Cleric" class="mb-2" style="height:200px;">
                     <br>
-                    <h5 class="p-1 text-light border border-light rounded">Pablo the Priest</h5>
+                    <h5 class="p-1 text-light">Pablo the Priest</h5>
                 </div>
     
-                <div class="offset-1 pt-3 inline" style="font-family: 'Berkshire Swash', cursive;">
+                <div class="col-md-3 inline mage" onclick="setGame(2)">
                     <img src="assets/images/girl_mage.png" alt="Human Mage" class="mb-2" style="height:200px;">
                     <br>
-                    <h5 class="p-1 offset-1 text-info border border-info rounded">Maddie the Mage</h5>
+                    <h5 class="p-1 offset-1 text-info">Maddie the Mage</h5>
                 </div>
     
-                <div class="ml-5 pt-3 inline" style="font-family: 'Berkshire Swash', cursive;">
+                <div class="col-md-3 inline rifleman" onclick="setGame(3)">
                     <img src="assets/images/rifleman.png" alt="Dwarven Rifleman" class="mb-2" style="height:200px;">
                     <br>
-                    <h5 class="p-1 text-warning border border-warning rounded">Randy the Rifleman</h5>
+                    <h5 class="p-1 text-warning">Randy the Rifleman</h5>
                 </div>
     
-                <div  class="ml-5 pt-3 inline hamiBox">
+                <div  class="col-md-3 inline hamiBox" onclick="setGame(4)">
                     <img src="assets/images/hamilton.gif" alt="Hamilton the Destroyer" class="hami">
                     <br>
-                    <h5 class="p-1 text-danger border border-danger rounded">Hamilton the Harasser</h5>
+                    <h5 class="p-1 text-danger">Hamilton the Harasser</h5>
                 </div>
             </div>
 
-            <!-- <div>
-                <h5 class="pl-5">Pablo the Priest</h5>
-                <h5 class="offset-1">Maddie the Mage</h5>
-                <h5 class="offset-1 pl-4">Randy the Rifleman</h5>
-                <h5 class="offset-1 text-danger">Hamilton the Harasser</h5>
-            </div> -->
         </div>
         
     </div>

@@ -36,6 +36,10 @@ h5 {
     display:inline;
 }
 
+.centerMe {
+    justify-content: center;
+}
+
 /*List of style changes to the 4 "Classes" Divs. */
 
 .hamiBox {

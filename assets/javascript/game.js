@@ -8,7 +8,7 @@ function setGame(x) {
     
    
     if (x === 1) {
-      element.innerHTML = '<div class="pt-3 inline bg-light cleric"> <img src="assets/images/cleric.png" alt="Human Cleric" class="mb-2" style="height:200px;"><br><h5 class="p-1 text-light border border-light rounded">Pablo the Priest</h5></div>'
+      element.innerHTML = '<div class="pt-3 inline bg-light cleric"><img src="assets/images/cleric.png" alt="Human Cleric" class="mb-2" style="height:200px;"><br><h5 class="p-1 text-light border border-light rounded">Pablo the Priest</h5></div>'
       
     } else if (x === 2) {
       element.innerHTML = '<div class="offset-1 pt-3 inline bg-light mage"><img src="assets/images/girl_mage.png" alt="Human Mage" class="mb-2" style="height:200px;"><br><h5 class="p-1 offset-1 text-info border border-info rounded">Maddie the Mage</h5></div>'

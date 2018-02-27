@@ -23,22 +23,30 @@ function setChampPic(x) {
 }
 
 function chooseFoe(x) {
+  $("#battleground").show();
+
   if (x === 1) {
-    $("#battleground").html('');
-    $("#").fadeOut();
+    $("#goblin1").fadeIn();
+    $("#goblin2").fadeOut();
   } else if (x === 2) {
-    $("#battleground").html('');
-    $("#").fadeOut();
+    $("#orc1").fadeIn();
+    $("#orc2").fadeOut();
   } else if (x === 3) {
-    $("#battleground").html('');
-    $("#").fadeOut();
+    $("#fire1").fadeIn();
+    $("#fire2").fadeOut();
   } else if (x === 4) {
-    $("#battleground").html('');
-    $("#").fadeOut();
+    $("#elemental1").fadeIn();
+    $("#elemental2").fadeOut();
   } 
 }
 
 $("#fightScreen").hide();
+$("#battleground").hide();
+$("#goblin1").hide();
+$("#orc1").hide();
+$("#fire1").hide();
+$("#elemental1").hide();
+
 
 $("#resetMe").click(function() {
   location.reload();

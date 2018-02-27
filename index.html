@@ -81,18 +81,52 @@
         </div>
 
         <div class="row centerMe justify-content-around">
-            <div class="col-2 pb-4 bg-dark border border-success rounded justify-content-center" id="yourChamp">
-                
+            <div class="col-md-2 bg-dark border border-success rounded justify-content-center" id="yourChamp">
+        
             </div>
-
-            <div class="col-3 bg-light border border-danger rounded" id="battleground">
-
+        
+            <div class="col-md-2 bg-dark border border-danger rounded" id="battleground">
+                <div class="row pt-3 pb-3">
+                    <div class="col-6" id="goblin1">
+                        <img src="assets/images/goblin.png" alt="Goblin" style="height:200px;">
+                    </div>
+                    <div class="col-6" id="orc1">
+                        <img src="assets/images/orc.png" alt="Orc" style="height:200px;">
+                    </div>
+                </div>
+        
+                <div class="row pt-3 pb-3">
+                    <div class="col-6" id="fire1">
+                        <img src="assets/images/fire_elemental.png" alt="Fire Elemental" style="height:200px;">
+                    </div>
+        
+                    <div class="col-6" id="elemental1">
+                        <img src="assets/images/boss.gif" alt="Boss" style="height:200px;">
+                    </div>
+                </div>
             </div>
-
-            <div class="col-5 bg-light border border-warning rounded" id="theDungeon">
-
+        
+            <div class="col-md-5 bg-dark border border-warning rounded" id="theDungeon">
+                <div class="row pt-3 pb-3">
+                    <div class="col-6" id="goblin2" onclick="chooseFoe(1)">
+                        <img src="assets/images/goblin.png" alt="Goblin" style="height:200px;">
+                    </div>
+                    <div class="col-6" id="orc2" onclick="chooseFoe(2)">
+                        <img src="assets/images/orc.png" alt="Orc" style="height:200px;">
+                    </div>
+                </div>
+        
+                <div class="row pt-3 pb-3">
+                    <div class="col-6" id="fire2" onclick="chooseFoe(3)">
+                        <img src="assets/images/fire_elemental.png" alt="Fire Elemental" style="height:200px;">
+                    </div>
+        
+                    <div class="col-6" id="elemental2" onclick="chooseFoe(4)">
+                        <img src="assets/images/boss.gif" alt="Boss" style="height:200px;">
+                    </div>
+                </div>
             </div>
-
+        
         </div>
     </div>
 

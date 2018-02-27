@@ -8,7 +8,6 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="assets/javascript/game.js"></script>
 
     <!-- Extra Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Acme|Berkshire+Swash|Kaushan+Script|Monoton|Press+Start+2P" rel="stylesheet">
@@ -29,51 +28,79 @@
                 <h1>Dungeon Crawler</h1>
             </div>
             <div>
-                <button type="button" class="btn btn-warning">Start Over</button>
+                <button type="button" id="resetMe" class="btn btn-warning">Start Over</button>
             </div>
         </div>
     </nav>
     
+    <div id="selectionScreen">
 
-    <div class="row centerMe" id="chooseChamp1">
-        <div class="col-6 bg-dark text-light text-center my-2 border border-success rounded py-1">
-            <h2>Choose Your Champion!</h2>
+        <div class="row centerMe" id="chooseChamp1">
+            <div class="col-6 bg-dark text-light text-center my-2 border border-success rounded py-1">
+                <h2>Choose Your Champion!</h2>
+            </div>
+        </div>
+    
+        <div class="row centerMe" id="chooseChamp2">
+            <div class="col-10 bg-dark my-2 border border-success rounded pt-4 py-4">
+                <div>
+                    <div class="col-md-3 mb-3 inline cleric characterSelect" onclick="setChampPic(1)">
+                        <img src="assets/images/cleric.png" alt="Human Cleric" class="mb-2" style="height:200px;">
+                        <br>
+                        <h5 class="p-1 text-light">Pablo the Priest</h5>
+                    </div>
+    
+                    <div class="col-md-3 inline mage characterSelect" onclick="setChampPic(2)">
+                        <img src="assets/images/girl_mage.png" alt="Human Mage" class="mb-2" style="height:200px;">
+                        <br>
+                        <h5 class="p-1 offset-1 text-info">Maddie the Mage</h5>
+                    </div>
+    
+                    <div class="col-md-3 inline rifleman characterSelect" onclick="setChampPic(3)">
+                        <img src="assets/images/rifleman.png" alt="Dwarven Rifleman" class="mb-2" style="height:200px;">
+                        <br>
+                        <h5 class="p-1 text-warning">Randy the Rifleman</h5>
+                    </div>
+    
+                    <div class="col-md-3 inline hamiBox characterSelect" onclick="setChampPic(4)">
+                        <img src="assets/images/hamilton.gif" alt="Hamilton the Destroyer" class="hami">
+                        <br>
+                        <h5 class="p-1 text-danger">Hamilton the Harasser</h5>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    
+    <div id="fightScreen">
 
-    <div class="row centerMe" id="chooseChamp2">
-        <div class="col-10 bg-dark my-2 border border-success rounded pt-4 py-4">
-            <div>
-                <div class="col-md-3 mb-3 inline cleric" onlick="setGame(1)">
-                    <img src="assets/images/cleric.png" alt="Human Cleric" class="mb-2" style="height:200px;">
-                    <br>
-                    <h5 class="p-1 text-light">Pablo the Priest</h5>
-                </div>
-    
-                <div class="col-md-3 inline mage" onclick="setGame(2)">
-                    <img src="assets/images/girl_mage.png" alt="Human Mage" class="mb-2" style="height:200px;">
-                    <br>
-                    <h5 class="p-1 offset-1 text-info">Maddie the Mage</h5>
-                </div>
-    
-                <div class="col-md-3 inline rifleman" onclick="setGame(3)">
-                    <img src="assets/images/rifleman.png" alt="Dwarven Rifleman" class="mb-2" style="height:200px;">
-                    <br>
-                    <h5 class="p-1 text-warning">Randy the Rifleman</h5>
-                </div>
-    
-                <div  class="col-md-3 inline hamiBox" onclick="setGame(4)">
-                    <img src="assets/images/hamilton.gif" alt="Hamilton the Destroyer" class="hami">
-                    <br>
-                    <h5 class="p-1 text-danger">Hamilton the Harasser</h5>
-                </div>
+        <div class="row centerMe mb-2" id="chooseEnemy">
+            <div class="col-4 bg-dark text-danger text-center my-2 border border-danger rounded py-1">
+                <h2>Choose an Enemy!</h2>
+            </div>
+        </div>
+
+        <div class="row centerMe justify-content-around">
+            <div class="col-2 pb-4 bg-dark border border-success rounded justify-content-center" id="yourChamp">
+                
+            </div>
+
+            <div class="col-3 bg-light border border-danger rounded" id="battleground">
+
+            </div>
+
+            <div class="col-5 bg-light border border-warning rounded" id="theDungeon">
+
             </div>
 
         </div>
-        
     </div>
-    
 
+
+
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
 
 
 
